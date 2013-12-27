@@ -1,0 +1,18 @@
+$base-color: #FDFDFD;
+$base-gradient: 'matte';
+// $active-color: #8bab43;
+$active-gradient: 'recessed';
+
+// Default Sencha Touch theme
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+// fonts
+@include font-face('Spreedia', inline-font-files(
+  'spreedia/spreediafont-v1.7-webfont.woff', woff,
+  'spreedia/spreediafont-v1.7-webfont.ttf', truetype,
+  'spreedia/spreediafont-v1.7-webfont.svg', svg
+), 'spreedia/spreediafont-v1.7-webfont.eot');
+
+// Icon mixin example:
+// @include icon('user');
