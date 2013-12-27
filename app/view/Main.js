@@ -2,7 +2,10 @@ Ext.define('Spreedia.view.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'main',
     requires: [
-        'Ext.TitleBar'
+        'Ext.TitleBar',
+        'Ext.SegmentedButton',
+        'Ext.form.FieldSet',
+        'Spreedia.view.StoreinstanceList'
     ],
     config: {
         tabBarPosition: 'bottom',
@@ -11,9 +14,9 @@ Ext.define('Spreedia.view.Main', {
             {
                 title: 'Near Me',
                 iconCls: 'locate',
-
-                styleHtmlContent: true,
-                scrollable: true,
+                layout: 'fit',
+                /* styleHtmlContent: true,
+                scrollable: true, */
 
                 items: [
                     {
@@ -46,12 +49,17 @@ Ext.define('Spreedia.view.Main', {
                                 ]
                             }
                         ]
+                    },
+                    {
+                        xclass: 'Spreedia.view.StoreinstanceList',
+                        id: 'nearbylist'
                     }
-                ],
+                ]
+                /* ,
 
                 html: [
                     "What's near me?"
-                ].join("")
+                ].join("") */
             },
             {
                 title: 'Search',

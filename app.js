@@ -24,7 +24,11 @@ Ext.application({
     ],
 
     views: [
-        'Main'
+        'Main', 'StoreinstanceList', 'StoreinstanceListItem'
+    ],
+
+    stores: [
+        'Storeinstances'
     ],
 
     icon: {
@@ -67,7 +71,7 @@ Ext.application({
 
     launch: function() {
         // Initialize geolocation
-        navigator.geolocation.getCurrentPosition(this.onGeoSuccess, this.onGeoError);
+        // navigator.geolocation.getCurrentPosition(this.onGeoSuccess, this.onGeoError);
 
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
@@ -80,6 +84,23 @@ Ext.application({
         } else {
             // simulate uuid
         } */
+
+        /* Mask the viewport
+        Ext.Viewport.setMasked(
+            {
+                xtype:'loadmask',
+                message:'Fetching Saratoga data...'
+            }
+        );
+
+        // Make JsonP request
+        Ext.data.JsonP.request({
+            url: 'http://spreedia.cake/locations/view/15.json',
+            success: function(result, request) {
+                // Unmask the viewport
+                Ext.Viewport.setMasked(false);
+            }
+        }); */
 
     },
 

@@ -638,7 +638,11 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "Spreedia.view.Main": []
+  "Spreedia.model.Storeinstance": [],
+  "Spreedia.store.Storeinstances": [],
+  "Spreedia.view.Main": [],
+  "Spreedia.view.StoreinstanceList": [],
+  "Spreedia.view.StoreinstanceListItem": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1357,7 +1361,15 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
+  "Spreedia.model.Storeinstance": [],
+  "Spreedia.store.Storeinstances": [],
   "Spreedia.view.Main": [
     "widget.main"
+  ],
+  "Spreedia.view.StoreinstanceList": [
+    "widget.storeinstancelist"
+  ],
+  "Spreedia.view.StoreinstanceListItem": [
+    "widget.storeinstancelistitem"
   ]
 });

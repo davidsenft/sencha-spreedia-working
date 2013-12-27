@@ -14,5 +14,18 @@ $active-gradient: 'recessed';
   'spreedia/spreediafont-v1.7-webfont.svg', svg
 ), 'spreedia/spreediafont-v1.7-webfont.eot');
 
+.storeinstance-list-item {
+	padding:10px 0 20px;
+	cursor:pointer;
+	border-bottom:1px solid #ccc;
+	.x-img {width:280px;height:140px;border-radius:5px;}
+	.storeinstance-name {
+		padding-bottom:10px;
+		font-size:22px;
+		font-weight:bold;
+		text-transform:uppercase;}
+	&:hover {background-color:#fff;}
+}
+
 // Icon mixin example:
 // @include icon('user');
